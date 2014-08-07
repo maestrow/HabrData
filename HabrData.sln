@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HabrData", "HabrData\HabrData.csproj", "{B16F3F7A-14B3-4CEC-B2AB-6D237CBA3B25}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{792D5E93-7F44-45E7-A0F1-8EB0E00D9F1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataMiner", "DataMiner\DataMiner.csproj", "{641AF541-AD38-4B5F-8E45-10804A9A130F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B16F3F7A-14B3-4CEC-B2AB-6D237CBA3B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B16F3F7A-14B3-4CEC-B2AB-6D237CBA3B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B16F3F7A-14B3-4CEC-B2AB-6D237CBA3B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B16F3F7A-14B3-4CEC-B2AB-6D237CBA3B25}.Release|Any CPU.Build.0 = Release|Any CPU
-		{792D5E93-7F44-45E7-A0F1-8EB0E00D9F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{792D5E93-7F44-45E7-A0F1-8EB0E00D9F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{792D5E93-7F44-45E7-A0F1-8EB0E00D9F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{792D5E93-7F44-45E7-A0F1-8EB0E00D9F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{641AF541-AD38-4B5F-8E45-10804A9A130F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{641AF541-AD38-4B5F-8E45-10804A9A130F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{641AF541-AD38-4B5F-8E45-10804A9A130F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{641AF541-AD38-4B5F-8E45-10804A9A130F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
