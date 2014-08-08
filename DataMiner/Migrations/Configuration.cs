@@ -1,3 +1,5 @@
+using DataMiner.Domain;
+
 namespace DataMiner.Migrations
 {
     using System;
@@ -5,14 +7,14 @@ namespace DataMiner.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<HabrData.Models.HabrDataContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<HabrDataContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(HabrData.Models.HabrDataContext context)
+        protected override void Seed(HabrDataContext context)
         {
             //  This method will be called after migrating to the latest version.
 

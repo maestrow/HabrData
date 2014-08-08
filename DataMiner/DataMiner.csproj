@@ -62,6 +62,10 @@
     <Compile Include="Migrations\201408081051254_Post_PublicationDate_Nullable.Designer.cs">
       <DependentUpon>201408081051254_Post_PublicationDate_Nullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201408081252348_Post_FullTextIndex.cs" />
+    <Compile Include="Migrations\201408081252348_Post_FullTextIndex.Designer.cs">
+      <DependentUpon>201408081252348_Post_FullTextIndex.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Miner.cs" />
     <Compile Include="Program.cs" />
@@ -85,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201408081051254_Post_PublicationDate_Nullable.resx">
       <DependentUpon>201408081051254_Post_PublicationDate_Nullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408081252348_Post_FullTextIndex.resx">
+      <DependentUpon>201408081252348_Post_FullTextIndex.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

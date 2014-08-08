@@ -5,8 +5,8 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using DataMiner.Domain;
 using DataMiner.Parsers;
-using HabrData.Models;
 using HtmlAgilityPack;
 
 namespace DataMiner

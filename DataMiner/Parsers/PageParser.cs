@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using DataMiner.Domain;
 using DataMiner.Structures;
-using HabrData.Models;
 using HtmlAgilityPack;
 
 namespace DataMiner.Parsers
