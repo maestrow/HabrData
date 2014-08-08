@@ -18,5 +18,7 @@ namespace DataMiner.Domain
         public DateTime? PublicationDate { get; set; }
 
         public string Excerpt { get; set; }
+
+        public PostType PostType { get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace DataMiner
         static void Main(string[] args)
         {
             var miner = new Miner();
-            miner.LoadPages();
+            miner.LoadPages(PostType.Monthly);
 
             //ParseTestPage();
             Console.WriteLine("ok");

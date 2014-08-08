@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using DataMiner.Domain;
+using DataMiner.Helpers;
 using DataMiner.Structures;
 using HtmlAgilityPack;
 
@@ -9,6 +11,11 @@ namespace DataMiner.Parsers
 {
     internal class PostParser
     {
+        static Regex dateRx = new Regex(@"\d\d\d\d");
+        private const string today = "сегодня";
+        private const string yesterday = "вчера";
+
+
         public static Post Parse(HtmlNode node)
         {
             Post post = new Post();
@@ -32,15 +39,15 @@ namespace DataMiner.Parsers
 
         private static DateTime? getPublished(string date)
         {
-            DateTime? result = null;
-            try
-            {
-                result = Convert.ToDateTime(date.Replace("в ", ""));
-            }
-            catch (FormatException)
-            {
-            }
-            return result;
+            if (date.StartsWith(today))
+                date = date.Replace(today + " в", DateTime.Now.ToShortDateString());
+            else if (date.StartsWith(yesterday))
+                date = date.Replace(yesterday + " в", DateTime.Now.Subtract(TimeSpan.FromDays(1)).ToShortDateString());
+            else if (!dateRx.IsMatch(date))
+                date = date.Replace("в ", "2014 ");
+            else
+                date = date.Replace("в ", "");
+            return Convert.ToDateTime(date);
         }
     }
 }

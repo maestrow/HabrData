@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataMiner.Domain;
 
-namespace DataMiner
+namespace DataMiner.Helpers
 {
     internal static class Urls
     {
         const string _site = "http://habrahabr.ru/";
         const string _post = "post/{0}/";
-        const string _page = "posts/top/alltime/page{0}/";
+        const string _page = "posts/top/{0}/page{1}/";
 
         public static string GetPostUrl(int id)
         {
             return _site + string.Format(_post, id);
         }
 
-        public static string GetPageUrl(int number)
+        public static string GetPageUrl(PostType type, int number)
         {
-            return _site + string.Format(_page, number);
+            return _site + string.Format(_page, type.ToString().ToLower(), number);
         }
     }
 }

@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Domain\HabrDataContext.cs" />
     <Compile Include="Domain\Post.cs" />
+    <Compile Include="Domain\PostType.cs" />
     <Compile Include="Migrations\201408081002188_Initial Create.cs" />
     <Compile Include="Migrations\201408081002188_Initial Create.Designer.cs">
       <DependentUpon>201408081002188_Initial Create.cs</DependentUpon>
@@ -65,6 +66,10 @@
     <Compile Include="Migrations\201408081252348_Post_FullTextIndex.cs" />
     <Compile Include="Migrations\201408081252348_Post_FullTextIndex.Designer.cs">
       <DependentUpon>201408081252348_Post_FullTextIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408081355372_PostType.cs" />
+    <Compile Include="Migrations\201408081355372_PostType.Designer.cs">
+      <DependentUpon>201408081355372_PostType.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Miner.cs" />
@@ -92,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201408081252348_Post_FullTextIndex.resx">
       <DependentUpon>201408081252348_Post_FullTextIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408081355372_PostType.resx">
+      <DependentUpon>201408081355372_PostType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
