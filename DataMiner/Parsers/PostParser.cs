@@ -9,7 +9,6 @@ namespace DataMiner.Parsers
 {
     internal class PostParser
     {
-      
         public static Post Parse(HtmlNode node)
         {
             Post post = new Post();
@@ -31,9 +30,17 @@ namespace DataMiner.Parsers
                 .Aggregate((a, b) => string.Format("{0}, {1}", a, b));
         }
 
-        private static DateTime getPublished(string date)
+        private static DateTime? getPublished(string date)
         {
-            return Convert.ToDateTime(date.Replace("в ", ""));
+            DateTime? result = null;
+            try
+            {
+                result = Convert.ToDateTime(date.Replace("в ", ""));
+            }
+            catch (FormatException)
+            {
+            }
+            return result;
         }
     }
 }

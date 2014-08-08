@@ -14,11 +14,11 @@ namespace DataMiner
     {
         static void Main(string[] args)
         {
-            //var miner = new Miner();
-            //miner.GetData();
+            var miner = new Miner();
+            miner.LoadPages();
 
-            ParseTestPage();
-
+            //ParseTestPage();
+            Console.WriteLine("ok");
             Console.ReadLine();
         }
 
